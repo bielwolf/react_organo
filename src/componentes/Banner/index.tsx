@@ -1,16 +1,20 @@
-import './Banner.css';
-import React from 'react';
+import './Banner.css'
+
+import React from 'react'
 
 interface BannerProps {
     enderecoImagem: string
     textoAlternativo?: string
-};
+}
 
 const Banner = ({ enderecoImagem, textoAlternativo } :BannerProps) => {
-    return (<header className="cabecalho">
-        {/* {<img src='/imagens/banner.png' alt='Banner Principal do Organo'/>} */}
-        <img src={enderecoImagem} alt={textoAlternativo}/>
-    </header>)
-};
+    // JSX
+    return (
+        <header className="banner">
+            {/* <img src="" alt="O banner principal da página do Organo"/> */}
+            <img src={enderecoImagem} alt={textoAlternativo}/>
+        </header>
+    )
+}
 
-export default Banner;
+export default Banner
