@@ -1,9 +1,9 @@
 import { useState } from "react";
-import Banner from "./componentes/Banner";
-import Formulario from "./componentes/Formulario";
-import Rodape from "./componentes/Rodape";
-import Time from "./componentes/Time";
+import Formulario from './componentes/Formulario';
+import Rodape from './componentes/Rodape';
+import Time from './componentes/Time';
 import { v4 as uuidv4 } from "uuid";
+import Banner from './componentes/Banner';
 
 function App() {
 
@@ -269,7 +269,7 @@ function App() {
 
   return (
     <div>
-      <Banner />
+      <Banner enderecoImagem='/imagens/banner.png'/>
       <Formulario 
       cadastrarTime={cadastrarTime}
       times={times.map(time => time.nome)} 
